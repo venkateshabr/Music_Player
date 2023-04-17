@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap 5 CDN for Stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e22cb743f1.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--Header-->
+    <nav class="navbar  fixed-top navbar-expand-lg  navbar-light  ">
+        <div class="container-fluid">
+         <div class="logo-container"><img class="logo" src="media/spotifylogo.png"></div>
+         
+          
+          <p class="margin-text">Spotify</p>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <p class="margin-text">Favourites</p>
+                
+              </li>
+            </ul>
+            <div class="search-bar">
+                <div>
+                    <!-- magnifying glass- search icon -->
+                    <i class="fas fa-search search-ico"></i>
+                </div>
+                <input type="text" name="search" placeholder="Search">
+                <div>
+                    <!-- mic icon -->
+                    <i class="fas fa-microphone mic-ico"></i>
+                </div>
+                
+            </div>
+            <div class="bell-logo-container bellposition">
+                <img class="bellicon" src="media/bellicon.webp">
+              </div>
+            <form class="d-flex">
+            
+            <div class="picture-logo-container bellposition">
+                <img class="logo" src="media/profilepicture.webp">
+            </div>
+              
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <!--Body of the webpage-->
+    <div id="body">
+        <div id="main-content">
+            <div id="carousel-cards">
+                <div class="carousel carousel1">
+                    <img src="media/carousel1.jpg">
+                </div>
+                <div class="carousel carousel2">
+                    <img src="media/carousel2.jpg">
+                </div> 
+                <div class="carousel carousel3">
+                    <img src="media/carousel3.jpg">
+                </div>
+            </div>
+            <div id="latest-release">
+                <p>Latest Release</p>
+                <div id="songs-card">
+                    <div class="item">
+                        <div class="onism-container">
+                            <a href="#footer"><img src="media/onism_song.jpeg"></a>
+                        </div>
+                       <i class="fas fa-play"></i>
+                        <div class="title-date">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                        <div class="dropdown-onism">
+                            <label for="latest-release-checkbox" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-h dropdown-toggle"></i></label>
+                            <ul class="dropdown-menu">
+                                <li>&nbsp&nbsp<i class="fas fa-play" id="newone" ></i>&nbsp&nbsp&nbsp&nbspPlay Now</li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>&nbsp&nbsp<i class="fa-duotone fa-plus"></i>&nbsp&nbsp&nbsp&nbspAdd To Queue</li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>&nbsp&nbsp<i class="fa-solid fa-heart-circle-plus"></i>&nbsp&nbsp&nbsp  Favourites</li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>&nbsp&nbsp<i class="fa-duotone fa-circle-info"></i>&nbsp&nbsp&nbsp&nbspGet Info</li>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="onism-container">
+                            <a href="#footer"><img src="media/onism_song.jpeg"></a>
+                        </div>
+                        <i class="fas fa-play" ></i>
+                        <div class="title-date">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                        <div class="dropdown-onism">
+                            <label for="latest-release-checkbox" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-h dropdown-toggle"></i></label>
+                            <ul class="dropdown-menu">
+                                <li>&nbsp&nbsp<i class="fa-solid fa-play"  id="newone"></i>&nbsp&nbsp&nbsp&nbspPlay Now</li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>&nbsp&nbsp<i class="fa-duotone fa-plus"></i>&nbsp&nbsp&nbsp&nbspAdd To Queue</li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>&nbsp&nbsp<i class="fa-solid fa-heart-circle-plus"></i>&nbsp&nbsp&nbsp  Favourites</li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>&nbsp&nbsp<i class="fa-duotone fa-circle-info"></i>&nbsp&nbsp&nbsp&nbspGet Info</li>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="onism-container">
+                            <a href="#footer"><img src="media/onism_song.jpeg"></a>
+                        </div>
+                        <i class="fas fa-play" ></i>
+                        <div class="title-date">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                        <div class="dropdown-onism">
+                            <label for="latest-release-checkbox" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-h dropdown-toggle"></i></label>
+                            <ul class="dropdown-menu">
+                                <li>&nbsp&nbsp<i class="fa-solid fa-play"  id="newone"></i>&nbsp&nbsp&nbsp&nbspPlay Now</li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>&nbsp&nbsp<i class="fa-duotone fa-plus"></i>&nbsp&nbsp&nbsp&nbspAdd To Queue</li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>&nbsp&nbsp<i class="fa-solid fa-heart-circle-plus"></i>&nbsp&nbsp&nbsp  Favourites</li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>&nbsp&nbsp<i class="fa-duotone fa-circle-info"></i>&nbsp&nbsp&nbsp&nbspGet Info</li>
+                              </ul>
+                        </div>
+                       
+                    </div>
+                    <div class="item">  
+                        <div class="onism-container">
+                            <a href="#footer"><img src="media/onism_song.jpeg"></a>
+                        </div>
+                        <i class="fas fa-play" ></i>
+                        <div class="title-date">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                        <div class="dropdown-onism">
+                            <label for="latest-release-checkbox" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-h dropdown-toggle"></i></label>
+                            <ul class="dropdown-menu">
+                                <li>&nbsp&nbsp<i class="fa-solid fa-play"  id="newone"></i>&nbsp&nbsp&nbsp&nbspPlay Now</li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>&nbsp&nbsp<i class="fa-duotone fa-plus"></i>&nbsp&nbsp&nbsp&nbspAdd To Queue</li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>&nbsp&nbsp<i class="fa-solid fa-heart-circle-plus"></i>&nbsp&nbsp&nbsp  Favourites</li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>&nbsp&nbsp<i class="fa-duotone fa-circle-info"></i>&nbsp&nbsp&nbsp&nbspGet Info</li>
+                              </ul>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div id="popular-artist">
+                <p>Popular Artist</p>
+                <div id="all-artist">
+                    <div class="artist-container">
+                        <img src="media/ed-sheeran.jpg">
+                        <p>Ed sheeran</p>
+                    </div>
+                    <div class="artist-container">
+                        <a href="singlesheet.html"><img src="media/coldplay.jpg"></a>
+                        <p>Coldplay</p>
+                    </div>
+                    <div class="artist-container">
+                        <img src="media/zayn.jpg">
+                        <p>Zayn</p>
+                    </div>
+                    <div class="artist-container">
+                        <img src="media/charlieputh.jpeg">
+                        <p>Charlie Puth</p>
+                    </div>
+                    <div class="artist-container">
+                        <img src="media/imagin dragon.jpg">
+                        <p>Imagin Dragon</p>
+                    </div>
+                    <div class="artist-container">
+                        <img src="media/bruno.jpg">
+                        <p>Burno Mars</p>
+                    </div>
+                </div>
+    
+            </div>
+            <div id="music-container">
+                <div id="music-type">
+                    <div class="music-pics">
+                        <img src="media/mike.webp">
+                    </div>
+                    <div class="music-types">
+                        <img src="media/love.jpg">
+                        <p class="type-name">Love</p>
+                    </div>
+                    <div class="music-types">
+                        <img src="media/retro.jpg">
+                        <p class="type-name">Retro</p>
+                    </div>
+                    <div class="music-types">
+                        <img src="media/chillout.jpeg">
+                        <p class="type-name">Chill</p>
+                    </div>
+                    <div class="music-types">
+                        <img src="media/workout.jpeg">
+                        <p class="type-name">Workout</p>
+                    </div>
+                    <div class="music-types">
+                        <img src="media/rock.webp">
+                        <p class="type-name">Rock</p>
+                    </div>
+                    <div class="music-types">
+                        <img src="media/pop.jpg">
+                        <p class="type-name">Pop</p>
+                    </div>
+                </div>
+            </div>
+            <div id="music-mood-container">
+                <div id="music-mood">
+                    <div class="mood-img-container">
+                        <img src="media/party.jpg">
+                        <p class="mood-name">Party</p>
+                    </div>
+                    <div class="mood-img-container">
+                        <img src="media/electronic.jpg">
+                        <p class="mood-name">Electronic</p>
+                    </div>
+                    <div class="mood-img-container">
+                        <img src="media/roadtrip.jpg">
+                        <p class="mood-name">Road Trip</p>
+                    </div>
+                </div>
+            </div>
+            <div id="latest-english">
+                <p>Latest English</p>
+                <div id="english-container">
+                    <div class="english-img-container">
+                        <img src="media/flower.jpeg">
+                         <div class="title-date edited">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="english-img-container">
+                        <img src="media/poster.jpg">
+                        <div class="title-date edited">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="english-img-container">
+                        <img src="media/people.jpeg">
+                        <div class="title-date edited">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="english-img-container">
+                        <img src="media/final.webp">
+                        <div class="title-date edited">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="english-img-container">
+                        <img src="media/flower.jpeg">
+                        <div class="title-date edited">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="english-img-container">
+                        <img src="media/poster.jpg">
+                        <div class="title-date edited">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div id="latest-hindi">
+                <p>Latest Hindi</p>
+                <div id="hindi-container">
+                    <div class="hindi-img-container">
+                        <img src="media/flower.jpeg">
+                         <div class="title-date edited">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="hindi-img-container">
+                        <img src="media/poster.jpg">
+                        <div class="title-date edited">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="hindi-img-container">
+                        <img src="media/people.jpeg">
+                        <div class="title-date edited">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="hindi-img-container">
+                        <img src="media/final.webp">
+                        <div class="title-date edited">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="hindi-img-container">
+                        <img src="media/flower.jpeg">
+                        <div class="title-date edited">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="hindi-img-container">
+                        <img src="media/poster.jpg">
+                        <div class="title-date edited">
+                            <p class="title-onism">
+                                Onism
+                            </p>
+                            <p class="date-onism">
+                                AUG 11, 2017
+                            </p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="aside-content">
+            <div id="Queue">
+                <p>Queues</p>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Queue
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Playlists</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Favourite Songs</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="song-list">
+                <div class="songs">
+                    <p class="para-name">01</p>
+                    <div class="img-small-container">
+                        <img src="media/flower.jpeg">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            Mirage
+                        </p>
+                        <p class="date-onism">
+                            Else
+                        </p>
+                    </div> 
+                    <div class="heart mirage-heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">02</p>
+                    <div class="img-small-container">
+                        <img src="media/final.webp">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            Worry Bout Us
+                        </p>
+                        <p class="date-onism">
+                            Rosie Lowe
+                        </p>
+                    </div> 
+                    <div class="heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">03</p>
+                    <div class="img-small-container">
+                        <img src="media/poster.jpg">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            New Skin
+                        </p>
+                        <p class="date-onism">
+                            Flume
+                        </p>
+                    </div> 
+                    <div class="heart newskin-heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">04</p>
+                    <div class="img-small-container">
+                        <img src="media/flower.jpeg">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            Mirage
+                        </p>
+                        <p class="date-onism">
+                            Else
+                        </p>
+                    </div> 
+                    <div class="heart mirage-heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">05</p>
+                    <div class="img-small-container">
+                        <img src="media/people.jpeg">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            Worry Bout Us
+                        </p>
+                        <p class="date-onism">
+                            Rosie Lowe
+                        </p>
+                    </div> 
+                    <div class="heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">06</p>
+                    <div class="img-small-container">
+                        <img src="media/poster.jpg">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            Mirage
+                        </p>
+                        <p class="date-onism">
+                            Else
+                        </p>
+                    </div> 
+                    <div class="heart mirage-heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">07</p>
+                    <div class="img-small-container">
+                        <img src="media/flower.jpeg">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            New Skin
+                        </p>
+                        <p class="date-onism">
+                            Flume
+                        </p>
+                    </div> 
+                    <div class="heart newskin-heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">08</p>
+                    <div class="img-small-container">
+                        <img src="media/final.webp">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            Mirage
+                        </p>
+                        <p class="date-onism">
+                            Else
+                        </p>
+                    </div> 
+                    <div class="heart mirage-heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">09</p>
+                    <div class="img-small-container">
+                        <img src="media/poster.jpg">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            Worry Bout Us
+                        </p>
+                        <p class="date-onism">
+                            Rosie Lowe
+                        </p>
+                    </div> 
+                    <div class="heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">10</p>
+                    <div class="img-small-container">
+                        <img src="media/flower.jpeg">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            Mirage
+                        </p>
+                        <p class="date-onism">
+                            Else
+                        </p>
+                    </div> 
+                    <div class="heart mirage-heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">11</p>
+                    <div class="img-small-container">
+                        <img src="media/people.jpeg">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            Worry Bout Us
+                        </p>
+                        <p class="date-onism">
+                            Rosie Lowe
+                        </p>
+                    </div> 
+                    <div class="heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">12</p>
+                    <div class="img-small-container">
+                        <img src="media/flower.jpeg">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            Mirage
+                        </p>
+                        <p class="date-onism">
+                            Else
+                        </p>
+                    </div> 
+                    <div class="heart mirage-heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">13</p>
+                    <div class="img-small-container">
+                        <img src="media/poster.jpg">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            New Skin
+                        </p>
+                        <p class="date-onism">
+                            Flume
+                        </p>
+                    </div> 
+                    <div class="heart newskin-heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">14</p>
+                    <div class="img-small-container">
+                        <img src="media/flower.jpeg">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            Mirage
+                        </p>
+                        <p class="date-onism">
+                            Else
+                        </p>
+                    </div> 
+                    <div class="heart mirage-heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="songs">
+                    <p class="para-name">15</p>
+                    <div class="img-small-container">
+                        <img src="media/final.webp">
+                    </div>
+                    <div class="title-date song-edited">
+                        <p class="title-onism">
+                            New Skin
+                        </p>
+                        <p class="date-onism">
+                            Flume
+                        </p>
+                    </div> 
+                    <div class="heart newskin-heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <div id="footer">
+        <div id="footer-container">
+            <div class="songs footer-edited">
+                <div class="img-small-container">
+                    <img src="media/onism_song.jpeg">
+                </div>
+                <div class="title-date song-edited">
+                    <p class="title-onism">
+                        Onism by john
+                    </p>
+                    <p class="date-onism">
+                        John Lennon
+                    </p>
+                </div> 
+                <div class="heart heart-edited">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="ban">
+                    <i class="fas fa-ban"></i>
+                </div>
+                
+            </div>
+            <div class="music-palyer">
+                <div class="controls">
+                    <div class="control-dis-1"><i class="fas fa-random"></i></div>
+                    <div class="control-dis"><i class="fas fa-step-backward"></i></div>
+                    <div class="control-dis"><i class="fas fa-pause-circle"></i></div>
+                    <div class="control-dis"><i class="fas fa-step-forward"></i></div>
+                    <div class="control-dis"><i class="fas fa-redo"></i></div>
+                </div>
+                <div id="slider">
+                    <!-- current time -->
+                    <div class="time">
+                        1:39
+                    </div>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                    <!-- total time -->
+                    <div class="time">
+                        4:44
+                    </div>
+                </div>
+            </div>
+            <div class="extras">
+                <div>
+                    <i class="fas fa-list-ul"></i>
+                </div>
+                <div>
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <div>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="slidecontainer" style="width:30%;">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+                </div>
+                <div>
+                    <i class="fas fa-expand-alt"></i>
+                </div>
+            </div>
+        </div>
+          
+    </div>
+
+    <!--Bootstrap 5 CDN for Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
